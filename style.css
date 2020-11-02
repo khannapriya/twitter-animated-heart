@@ -1,0 +1,42 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    width:100vw;
+    height:100vh;
+    position:relative;
+    background:#fcfcfc;
+}
+.heart{
+    height:100px;
+    width:100px;
+    position:absolute;
+    margin:auto;
+    left: 50%;
+    top: 50%;
+    background-image:url( 'https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png');
+    
+}
+.heart:hover{
+    /* background:red; */
+    animation : animate .5s linear forwards;
+    cursor:pointer;
+}
+
+@keyframes animate{
+    0%{
+        background-position: center;
+        transform:scale(1)
+    }
+    50%{
+        background-position:center;
+        transform:scale(1.5)
+    }
+    100%{
+        background-position: center;
+        transform:scale(2)
+    }
+}
